@@ -153,8 +153,9 @@ pub fn update_text_agent(runner: &AppRunner) -> Option<()> {
 
                     let new_pos_percent = format!("{}%", (delta * 100.0).round());
 
-                    canvas_style.set_property("position", "absolute").ok()?;
-                    canvas_style.set_property("top", &new_pos_percent).ok()?;
+                    //This causes problems when canvais is not full screen
+                    //canvas_style.set_property("position", "absolute").ok()?;
+                    //canvas_style.set_property("top", &new_pos_percent).ok()?;
                 }
             }
         }
