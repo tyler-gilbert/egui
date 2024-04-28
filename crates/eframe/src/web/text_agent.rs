@@ -175,8 +175,8 @@ pub fn update_text_agent(runner: &AppRunner) -> Option<()> {
         call_after_delay(std::time::Duration::from_millis(0), move || {
             input.blur().ok();
             input.set_hidden(true);
-            canvas_style.set_property("position", "absolute").ok();
-            canvas_style.set_property("top", "0%").ok(); // move back to normal position
+            //canvas_style.set_property("position", "absolute").ok();
+            //canvas_style.set_property("top", "0%").ok(); // move back to normal position
         });
     }
     Some(())
